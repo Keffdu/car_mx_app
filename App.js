@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={{color:"white"}} >Pat eats ASS</Text>
+      <Text style={{color:"white"}} >Pat eats ASS :(</Text>
       <StatusBar style="auto" />
     </View>
   );
