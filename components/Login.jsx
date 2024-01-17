@@ -58,7 +58,7 @@ function Login() {
                                 style={{
                                     backgroundColor: '#e4d9d9c3',
                                     color: 'black',
-                                    width: 200,
+                                    width: 225,
                                     height: 40,
                                     borderWidth: 1,
                                     padding: 10,
@@ -73,7 +73,7 @@ function Login() {
                                 style={{
                                     backgroundColor: '#e4d9d9c3',
                                     color: 'black',
-                                    width: 200,
+                                    width: 225,
                                     height: 40,
                                     marginBottom: 5,
                                     borderWidth: 1,
@@ -82,7 +82,7 @@ function Login() {
                             />
                         </View>
                         <View style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
-                            <Button onPress={() => setClicked(true)} size='lg' title={clicked ? "Pressed!" : "Login"} buttonStyle={{backgroundColor: buttonColor, borderRadius: 5, width: 125}} />
+                            <Button onPress={() => setClicked(!clicked)} size='lg' title={clicked ? "Pressed!" : "Login"} buttonStyle={{backgroundColor: buttonColor, borderRadius: 5, width: 125}} />
                         </View>
                     </View>
                 </View>
