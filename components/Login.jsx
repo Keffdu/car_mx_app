@@ -51,8 +51,9 @@ function Login() {
                         <Image source={logo} style={{ width: 325, height: 200, }} />
                     </View>
                     <View style={{ justifyContent: 'space-even', alignItems: 'left', width: "80%", height: "55%" }}>
-                        <View style={{ margin: 20 }}>
+                        <View style={{ margin: 20, }}>
                             <Text style={styles.text}>Username</Text>
+                            <View style={{display: 'flex', flexDirection:'row', justifyContent: 'center', width: "100%"}}>
                             <TextInput
                                 keyboardAppearance={currentTime >= 18 ? 'dark' : 'light'}
                                 style={{
@@ -64,9 +65,11 @@ function Login() {
                                     padding: 10,
                                 }}
                             />
+                            </View>
                         </View>
                         <View style={{ margin: 20, }}>
                             <Text style={styles.text}>Password</Text>
+                            <View style={{display: 'flex', flexDirection:'row', justifyContent: 'center', width: "100%"}}>
                             <TextInput
                                 secureTextEntry={true}
                                 keyboardAppearance={currentTime >= 18 ? 'dark' : 'light'}
@@ -80,6 +83,7 @@ function Login() {
                                     padding: 10,
                                 }}
                             />
+                            </View>
                         </View>
                         <View style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
                             <Button onPress={() => setClicked(!clicked)} size='lg' title={clicked ? "Pressed!" : "Login"} buttonStyle={{backgroundColor: buttonColor, borderRadius: 5, width: 125}} />
