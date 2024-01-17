@@ -5,6 +5,7 @@ import { Button } from '@rneui/themed';
 function Login() {
 
     const [currentTime, setCurrentTime] = useState('')
+    const [clicked, setClicked] = useState(false)
 
     const backgroundImage = currentTime >= 18 ? require('../assets/night-img.png') : require('../assets/morning-img.png')
     const logo = require('../assets/logo(2).png')
@@ -81,7 +82,7 @@ function Login() {
                             />
                         </View>
                         <View style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
-                            <Button size='lg' title={"Login"} buttonStyle={{backgroundColor: buttonColor, borderRadius: 5, width: 125}} />
+                            <Button onPress={() => setClicked(true)} size='lg' title={clicked ? "Pressed!" : "Login"} buttonStyle={{backgroundColor: buttonColor, borderRadius: 5, width: 125}} />
                         </View>
                     </View>
                 </View>
