@@ -34,7 +34,7 @@ function Login() {
             textAlign: 'left',
         },
         input: {
-            backgroundColor: '#8b666680',
+            // backgroundColor: '#8b666680',
             width: '75%',
             height: 40,
             borderWidth: 1,
@@ -49,14 +49,14 @@ function Login() {
                     <View style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                         <Image source={logo} style={{ width: 325, height: 200, }} />
                     </View>
-                    <View style={{ justifyContent: 'space-even', alignItems: 'left', width: "80%", height: "55%", backgroundColor: '#00000080' }}>
+                    <View style={{ justifyContent: 'space-even', alignItems: 'left', width: "80%", height: "55%" }}>
                         <View style={{ margin: 20 }}>
                             <Text style={styles.text}>Username</Text>
                             <TextInput
                                 keyboardAppearance={currentTime >= 18 ? 'dark' : 'light'}
                                 style={{
-                                    backgroundColor: '#8b666680',
-                                    color: 'white',
+                                    backgroundColor: '#e4d9d9c3',
+                                    color: 'black',
                                     width: 200,
                                     height: 40,
                                     borderWidth: 1,
@@ -70,8 +70,8 @@ function Login() {
                                 secureTextEntry={true}
                                 keyboardAppearance={currentTime >= 18 ? 'dark' : 'light'}
                                 style={{
-                                    backgroundColor: '#8b666680',
-                                    color: 'white',
+                                    backgroundColor: '#e4d9d9c3',
+                                    color: 'black',
                                     width: 200,
                                     height: 40,
                                     marginBottom: 5,
